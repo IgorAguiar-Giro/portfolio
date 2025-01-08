@@ -3,23 +3,29 @@ export default function Home() {
     <div id="main" className="">
       <div
         id="main-section"
-        className="flex h-screen w-screen absolute md:flex-col lg:flex-row"
+        className="flex flex-col h-screen w-screen lg:flex-row lg:justify-center "
       >
         <div
           id="picture-bg"
-          className="flex  justify-end h-2/3 w-1/3  sticky m-10"
+          className="flex  justify-center lg:h-screen w-screen lg:w-1/3  px-5  "
         >
           <div
             id="picture-box"
-            className="flex flex-col items-center bg-white rounded-2xl h-full w-2/3 px-5 max-h-[640px] max-w-[344px] py-8"
+            className="flex flex-col items-center  bg-white rounded-2xl h-[456px] w-full md:h-[540] md:w-[750]  lg:h-[640px] lg:w-[344px]  py-8 px-5"
           >
-            <div id="picture" className="h-[40%] w-[90%] bg-orange-500 "></div>
+            <div
+              id="picture"
+              className=" w-[260px] h-[210px] md:h-[284px] md:w-[240px] bg-orange-500 rounded-2xl "
+            ></div>
           </div>
         </div>
-        <div id="content" className="w-2/3 flex flex-col ">
-          <h1 className="text-9xl text-white">SOFTWARE</h1>
+        <div
+          id="content"
+          className=" flex flex-col text-center text-6xl lg:text-start lg:text-8xl md:text-7xl px-5 md:py-5"
+        >
+          <h1 className=" text-white    ">SOFTWARE</h1>
 
-          <h1 className="text-9xl text-gray-500">ENGINEER</h1>
+          <h1 className=" text-gray-500    ">ENGINEER</h1>
         </div>
       </div>
     </div>
