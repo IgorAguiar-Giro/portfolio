@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import Navbar from "./components/Navbar";
+import Perfil from "./components/Perfil";
+
 import "./globals.css";
 
 const poppins = Poppins({
@@ -20,8 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${poppins.variable} antialiased`}>{children}</body>
-        
+      <body className={`${poppins.variable} antialiased`}>
+        <div id="main">
+          <Navbar />
+          <div id="main-section" className="flex flex-col lg:flex-row lg:h-screen lg:overflow-y-auto scrollbar-hide lg:gap-12">
+            <Perfil />
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
