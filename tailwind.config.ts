@@ -23,6 +23,6 @@ export default {
     },
   },
   plugins: [
-    scrollbarHide,
+    scrollbarHide, 
     ],
 } satisfies Config;

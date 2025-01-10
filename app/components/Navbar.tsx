@@ -4,9 +4,9 @@ import NavbarItem from "./NavbarItem";
 
 export default function Navbar() {
   return (
-    <nav className="text-white flex items-center justify-center">
+    <nav className="flex items-center justify-center text-white">
       <div>
-        <ul className="flex items-center mb-10 mt-5 py-4 px-8 space-x-8 rounded-xl w-fit bg-white/[0.04] gap-3">
+        <ul className="mb-10 mt-5 flex w-fit items-center gap-3 space-x-8 rounded-xl bg-white/[0.04] px-8 py-4">
           <NavbarItem Icon={House} label="Home" href="/" />
           <NavbarItem Icon={UserRound} label="About" href="/about" />
           <NavbarItem Icon={FolderCheck} label="Projects" href="/projects" />

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Navbar from "./components/Navbar";
-import Perfil from "./components/Perfil";
+import Profile from "./components/Profile";
 
 import "./globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
-  weight: "700",
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -28,10 +28,12 @@ export default function RootLayout({
           <Navbar />
           <div
             id="main-section"
-            className="flex flex-col lg:flex-row"
+            className="flex flex-col items-center justify-center lg:flex-row lg:items-stretch"
           >
-            <div className="lg:sticky lg:top-0 "><Perfil /></div>
-            
+            <div className="lg:sticky lg:top-0 ">
+              <Profile />
+            </div>
+
             <main className="">{children}</main>
           </div>
         </div>
