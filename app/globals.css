@@ -15,9 +15,11 @@
 }
 */
 
+
 body {
   /*color: var(--foreground);*/
-  background: black;
-  font-family: var(--font-poppins),  sans-serif;
+  background: #151312;
+  font-family: var(--font-poppins), sans-serif;
   color: white;
+  
 }

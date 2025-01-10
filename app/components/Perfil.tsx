@@ -2,11 +2,11 @@ export default function Perfil() {
   return (
     <div
       id="picture-bg"
-      className="flex justify-center lg:h-screen w-screen lg:w-1/3 p-5 lg:pl-10 lg:sticky lg:top-0"
+      className="flex justify-center  p-5 lg:pl-10 lg:sticky lg:top-0"
     >
       <div
         id="picture-box"
-        className="flex flex-col items-center bg-white rounded-2xl h-[456px] w-full md:h-[540] md:w-[750] lg:h-[640px] lg:w-[344px] py-8 px-5"
+        className="flex flex-col items-center bg-white rounded-2xl h-[456px] w-full md:h-[540] md:w-[750] lg:h-[640px] lg:w-[344px] py-8 px-5 "
       >
         <div
           id="picture"

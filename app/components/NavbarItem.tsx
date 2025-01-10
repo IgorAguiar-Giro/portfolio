@@ -27,7 +27,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ Icon, label, href }) => {
         className="flex flex-col items-center"
       >
         <Icon className="text-xl" />
-        <span className="absolute bg-white/[0.1] rounded-lg p-1 mt-2 text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-9 transition-all duration-500 ease-in-out">
+        <span className="absolute bg-white/[0.04] rounded-lg p-1 mt-2 text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-9 transition-all duration-500 ease-in-out">
           {label}
         </span>
       </Link>

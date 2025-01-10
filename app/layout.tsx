@@ -26,9 +26,13 @@ export default function RootLayout({
       <body className={`${poppins.variable} antialiased`}>
         <div id="main">
           <Navbar />
-          <div id="main-section" className="flex flex-col lg:flex-row lg:h-screen lg:overflow-y-auto scrollbar-hide lg:gap-12">
-            <Perfil />
-            {children}
+          <div
+            id="main-section"
+            className="flex flex-col lg:flex-row"
+          >
+            <div className="lg:sticky lg:top-0 "><Perfil /></div>
+            
+            <main className="">{children}</main>
           </div>
         </div>
       </body>
