@@ -22,6 +22,15 @@ const eslintConfig = [
       "tailwindcss/no-custom-classname": "off", // Adjust if you use custom class names
     },
   },
+  {
+    // Make sure to add this to the config for Tailwind to function correctly
+    settings: {
+      tailwindcss: {
+        // Enable Tailwind CSS IntelliSense (if required)
+        config: "./tailwind.config.js", // Adjust path if necessary
+      },
+    },
+  },
 ];
 
 export default eslintConfig;
